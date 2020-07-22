@@ -1,8 +1,8 @@
 # ZeMA Testbed Bayesian Machine Learning
 
 This is supported by European Metrology Programme for Innovation and Research (EMPIR)
-under the project Metrology for the Factory of the Future (Met4FoF), project number 
-17IND12. (https://www.ptb.de/empir2018/met4fof/home/)
+under the project [Metrology for the Factory of the Future (Met4FoF), project number 
+17IND12.](https://www.ptb.de/empir2018/met4fof/project/overview/)
 
 ## Purpose
 
