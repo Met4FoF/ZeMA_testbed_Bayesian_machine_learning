@@ -3,11 +3,8 @@ Zema Testbed Bayesian Machine Learning
 created by: loïc Coquelin (LNE)
 """
 
-import os
-import matplotlib.pyplot as plt
-import numpy as np
 # %%
-from utils import (Data, Model)
+from ZeMA_testbed_Bayesian_machine_learning.utils import Data, Model
 
 # os.environ['MKL_THREADING_LAYER'] = 'GNU'
 
