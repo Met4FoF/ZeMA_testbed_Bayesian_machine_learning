@@ -38,5 +38,5 @@ Now you can watch the execution of the Bayesian inference.
 
 ## References
 
-For details about the provess refer to the author
+For details about the process refer to the author
 [Loïc Coquelin (LNE)](mailto:loic.coquelin@lne.fr).
