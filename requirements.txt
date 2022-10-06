@@ -4,61 +4,63 @@
 #
 #    pip-compile
 #
-arviz==0.12.0
+arviz==0.12.1
     # via
     #   -r requirements.in
     #   pymc3
-cachetools==5.0.0
+cachetools==5.2.0
     # via pymc3
-certifi==2021.10.8
+certifi==2022.9.24
     # via
     #   -r requirements.in
     #   requests
-cftime==1.6.0
+cftime==1.6.2
     # via
     #   -r requirements.in
     #   netcdf4
-chardet==4.0.0
+chardet==5.0.0
     # via -r requirements.in
-charset-normalizer==2.0.12
+charset-normalizer==2.1.1
     # via requests
+contourpy==1.0.5
+    # via matplotlib
 cycler==0.11.0
     # via
     #   -r requirements.in
     #   matplotlib
-cython==0.29.28
+cython==0.29.32
     # via -r requirements.in
 deprecat==2.1.1
     # via pymc3
-dill==0.3.4
+dill==0.3.5.1
     # via pymc3
-fastprogress==1.0.2
+fastprogress==1.0.3
     # via
     #   -r requirements.in
     #   pymc3
-filelock==3.6.0
+filelock==3.8.0
     # via theano-pymc
-fonttools==4.33.2
+fonttools==4.37.4
     # via matplotlib
-h5py==3.6.0
+h5py==3.7.0
     # via -r requirements.in
-idna==3.3
+idna==3.4
     # via
     #   -r requirements.in
     #   requests
-joblib==1.1.0
+joblib==1.2.0
     # via
     #   -r requirements.in
     #   scikit-learn
-kiwisolver==1.4.2
+kiwisolver==1.4.4
     # via
     #   -r requirements.in
     #   matplotlib
-matplotlib==3.5.1
+matplotlib==3.6.0
     # via
     #   -r requirements.in
     #   arviz
-netcdf4==1.5.8
+netcdf4==1.6.1
     # via
     #   -r requirements.in
     #   arviz
@@ -67,6 +69,7 @@ numpy==1.22.1
     #   -r requirements.in
     #   arviz
     #   cftime
+    #   contourpy
     #   h5py
     #   matplotlib
     #   netcdf4
@@ -78,13 +81,14 @@ numpy==1.22.1
     #   theano
     #   theano-pymc
     #   xarray
+    #   xarray-einstats
 packaging==21.3
     # via
     #   -r requirements.in
     #   arviz
     #   matplotlib
     #   xarray
-pandas==1.4.2
+pandas==1.5.0
     # via
     #   -r requirements.in
     #   arviz
@@ -94,11 +98,11 @@ patsy==0.5.2
     # via
     #   -r requirements.in
     #   pymc3
-pillow==9.1.0
+pillow==9.2.0
     # via matplotlib
 pymc3==3.11.5
     # via -r requirements.in
-pyparsing==3.0.8
+pyparsing==3.0.9
     # via
     #   matplotlib
     #   packaging
@@ -107,13 +111,13 @@ python-dateutil==2.8.2
     #   -r requirements.in
     #   matplotlib
     #   pandas
-pytz==2022.1
+pytz==2022.4
     # via
     #   -r requirements.in
     #   pandas
-requests==2.27.1
+requests==2.28.1
     # via -r requirements.in
-scikit-learn==1.0.2
+scikit-learn==1.1.2
     # via -r requirements.in
 scipy==1.7.3
     # via
@@ -123,6 +127,7 @@ scipy==1.7.3
     #   scikit-learn
     #   theano
     #   theano-pymc
+    #   xarray-einstats
 semver==2.13.0
     # via pymc3
 six==1.16.0
@@ -137,23 +142,26 @@ theano-pymc==1.1.2
     # via pymc3
 threadpoolctl==3.1.0
     # via scikit-learn
-tqdm==4.64.0
+tqdm==4.64.1
     # via -r requirements.in
-typing-extensions==4.2.0
+typing-extensions==4.3.0
     # via
     #   -r requirements.in
     #   arviz
     #   pymc3
-urllib3==1.26.9
+urllib3==1.26.12
     # via
     #   -r requirements.in
     #   requests
-wrapt==1.14.0
+wrapt==1.14.1
     # via deprecat
-xarray==2022.3.0
+xarray==2022.9.0
     # via
     #   -r requirements.in
     #   arviz
+    #   xarray-einstats
+xarray-einstats==0.3.0
+    # via arviz
 
 # The following packages are considered to be unsafe in a requirements file:
 # setuptools
