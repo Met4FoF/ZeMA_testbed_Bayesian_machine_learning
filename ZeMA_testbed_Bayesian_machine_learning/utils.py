@@ -49,6 +49,7 @@
 # Data is imported into the list of length 11, where each element consists of
 # dataframe whose rows are time-series of cycles.
 
+import datetime
 import math
 # ## Note!!!
 # **Data downloaded from the link have to be located in the same folder as
@@ -58,7 +59,7 @@ import math
 import os
 import pickle
 import warnings
-import datetime
+
 import arviz as az
 # os.environ['MKL_THREADING_LAYER'] = 'GNU'
 import h5py
@@ -68,24 +69,33 @@ import numpy as np
 import pandas as pd
 import pymc3 as pm
 import requests
-# from theano import function
 import theano.tensor as tt
 from scipy.interpolate import griddata
-from scipy.stats import (pearsonr)
-from sklearn.covariance import (EmpiricalCovariance, MinCovDet, GraphicalLassoCV)
-# dimensionality reduction
-from sklearn.decomposition import (PCA, KernelPCA)
-from sklearn.discriminant_analysis import LinearDiscriminantAnalysis, QuadraticDiscriminantAnalysis
-from sklearn.ensemble import RandomForestClassifier, AdaBoostClassifier
-from sklearn.metrics import (classification_report, precision_recall_fscore_support, accuracy_score,
-                             explained_variance_score, max_error, mean_absolute_error, mean_squared_error,
-                             mean_squared_log_error, median_absolute_error, r2_score)
-from sklearn.model_selection import (train_test_split)
+from scipy.stats import pearsonr
+from sklearn.covariance import EmpiricalCovariance, GraphicalLassoCV, MinCovDet
+from sklearn.decomposition import KernelPCA, PCA
+from sklearn.discriminant_analysis import (
+    LinearDiscriminantAnalysis,
+    QuadraticDiscriminantAnalysis,
+)
+from sklearn.ensemble import AdaBoostClassifier, RandomForestClassifier
+from sklearn.metrics import (
+    accuracy_score,
+    classification_report,
+    explained_variance_score,
+    max_error,
+    mean_absolute_error,
+    mean_squared_error,
+    median_absolute_error,
+    precision_recall_fscore_support,
+    r2_score,
+)
+from sklearn.model_selection import train_test_split
 from sklearn.naive_bayes import GaussianNB
 # list of classifiers
 from sklearn.neighbors import KNeighborsClassifier
 # scaling of input data
-from sklearn.preprocessing import (StandardScaler, MinMaxScaler)
+from sklearn.preprocessing import StandardScaler
 from sklearn.svm import SVC
 from sklearn.tree import DecisionTreeClassifier
 from theano import shared
